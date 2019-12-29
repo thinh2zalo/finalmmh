@@ -73,7 +73,7 @@ exports.search_with_price = (giadau,giacuoi) => {
     return db.load(sql);
 }
 exports.updateLoai = (idLoai,tenLoai)=>{
-    var sql=`UPDATE loai SET tenLoai='${tenLoai}' WHERE idLoai = '${idLoai}'`;
+    var sql=`UPDATE Loai SET tenLoai='${tenLoai}' WHERE idLoai = '${idLoai}'`;
     return db.save(sql);
 };
 exports.deleteLoai=(idLoai)=>{
