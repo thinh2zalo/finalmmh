@@ -81,7 +81,7 @@ exports.deleteLoai=(idLoai)=>{
     return db.save(sql);
 };
 exports.addLoai=(tenLoai)=>{
-    var sql = `insert into loai(tenLoai) values('${tenLoai}')`;
+    var sql = `insert into Loai(tenLoai) values('${tenLoai}')`;
     return db.save(sql);
 
 };
