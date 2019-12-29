@@ -3,7 +3,7 @@ var db = require('../fn/db');
 exports.searchById = (id) => {
     var sql = `Select* from Book
      INNER JOIN NhaSX ON Book.idNhaSX=nhasx.idNhaSX
-     INNER JOIN loai ON Book.idLoai=loai.idLoai
+     INNER JOIN Loai ON Book.idLoai=loai.idLoai
     where idSach = ${id}`;
     return db.load(sql);
 }
